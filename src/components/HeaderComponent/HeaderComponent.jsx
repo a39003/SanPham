@@ -55,7 +55,7 @@ const HeaderComponent = ({ isHiddenSearch = false }) => {
   useEffect(() => {
     const email = localStorage.getItem("email");
     console.log(email);
-    fetchData(email);
+    if (email) fetchData(email);
   }, []);
   return (
     <div>
