@@ -10,54 +10,58 @@ import SignUpPage from "../pages/SignUpPage/SignUpPage";
 import TypeProductPage from "../pages/TypeProductPage/TypeProductPage";
 
 export const routes = [
-    {
-        path:'/',
-        page:HomePage,
-        isShowHeader: true
-    },
-    {
-        path:'/order',
-        page:OrderPage,
-        isShowHeader: true
-    },
-    {
-        path:'/products',
-        page:ProductsPage,
-        isShowHeader: true
-    },
-    {
-        path:'/:type',
-        page:TypeProductPage,
-        isShowHeader: true
-    },
-    {
-        path:'/sign-in',
-        page:SignInPage,
-        isShowHeader: false
-    },
-    {
-        path:'/sign-up',
-        page:SignUpPage,
-        isShowHeader: false
-    },
-    {
-        path:'/product-details',
-        page:ProductDetailsPage,
-        isShowHeader: true
-    },
-    {
-        path:'/profile',
-        page:ProfilePage,
-        isShowHeader: true
-    },
-    {
-        path:'/admin',
-        page:AdminPage,
-        isShowHeader: false
-    },
-    { 
-        path:'*',
-        page:NotFoundPage
-    },
-
-]
+  {
+    path: "/",
+    page: HomePage,
+    isShowHeader: true,
+  },
+  {
+    path: "/order",
+    page: OrderPage,
+    isShowHeader: true,
+  },
+  {
+    path: "/products",
+    page: ProductsPage,
+    isShowHeader: true,
+  },
+  {
+    path: "/:productId",
+    page: ProductDetailsPage,
+    isShowHeader: true,
+  },
+  {
+    path: "/:type",
+    page: TypeProductPage,
+    isShowHeader: true,
+  },
+  {
+    path: "/sign-in",
+    page: SignInPage,
+    isShowHeader: false,
+  },
+  {
+    path: "/sign-up",
+    page: SignUpPage,
+    isShowHeader: false,
+  },
+  {
+    path: "/product-details",
+    page: ProductDetailsPage,
+    isShowHeader: true,
+  },
+  {
+    path: "/profile",
+    page: ProfilePage,
+    isShowHeader: true,
+  },
+  {
+    path: "/admin",
+    page: AdminPage,
+    isShowHeader: false,
+  },
+  {
+    path: "*",
+    page: NotFoundPage,
+  },
+];
